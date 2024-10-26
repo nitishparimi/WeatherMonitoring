@@ -9,10 +9,9 @@ public class WeatherSummary {
     private Long id;
     private String city;
     private double temperature;
-    private LocalDateTime timestamp;  // Store both date and time
+    private LocalDateTime timestamp;  
     private String weatherCondition; 
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }
