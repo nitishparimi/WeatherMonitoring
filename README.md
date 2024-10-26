@@ -31,7 +31,7 @@ The data retrieved includes:
      - Maximum temperature.
      - Minimum temperature.
      - Dominant weather condition.
-    Note: The daily weather summary is calculated at the start of the next day based on the data gathered throughout the current day.
+    - Note: The daily weather summary is calculated at the start of the next day based on the data gathered throughout the current day.
 
 3. **Alerting System**:
    - User-defined thresholds for temperature or weather conditions.
@@ -51,7 +51,7 @@ The data retrieved includes:
 - **MySQL**: For persistent storage of weather summaries.
 - **OpenWeatherMap API**: Source of real-time weather data.
 - **Maven**: Build tool for managing dependencies.
-- **Thymeleaf**: Used for rendering web views.
+
 
 ### Installation
 
@@ -84,7 +84,7 @@ The data retrieved includes:
      create database weather_db;
      ```
    
-   - Add your MySQL credentials and API key:
+   - Add your MySQL credentials:
      ```properties
      spring.datasource.url=jdbc:mysql://localhost:3306/weather_db
      spring.datasource.username=root
