@@ -9,10 +9,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class WeatherData {
 
     private Main main;
-    private long dt;  // Unix timestamp
+    private long dt;  
     private Weather[] weather;
 
-    // Getters and Setters
 
     public Main getMain() {
         return main;
@@ -38,13 +37,11 @@ public class WeatherData {
         this.weather = weather;
     }
 
-    // Inner class for the "main" section of the response
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Main {
         private double temp;
         private double feels_like;
 
-        // Getters and Setters
 
         public double getTemp() {
             return temp;
@@ -63,13 +60,10 @@ public class WeatherData {
         }
     }
 
-    // Inner class for the "weather" section of the response
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Weather {
         private String main;
         private String description;
-
-        // Getters and Setters
 
         public String getMain() {
             return main;
