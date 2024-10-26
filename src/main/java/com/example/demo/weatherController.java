@@ -71,13 +71,14 @@ public class weatherController {
 
                     if (breachCount >= 2) {
                         // Trigger alerts here
-                    	System.out.println("thresholde breach in the" + city + ".");
+                        System.out.println(" ..................... ");
+                    	System.out.println("thresholde breach in the" + city + " .");
+                        System.out.println(" ..................... ");
                     }
                 } else {
                     consecutiveBreaches.put(city, 0);
                 }
             } catch (Exception e) {
-                // Log the error
                 e.printStackTrace();
             }
         }
@@ -102,8 +103,5 @@ public class weatherController {
         model.addAttribute("dailySummaries", dailySummaries);
         return "dailyWeather.jsp"; 
     }
-    
-   
-     
-
+  
 }
