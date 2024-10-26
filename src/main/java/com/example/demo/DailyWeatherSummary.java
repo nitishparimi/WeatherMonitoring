@@ -61,6 +61,4 @@ public class DailyWeatherSummary {
 	private double maxTemperature;
     private double minTemperature;
     private String dominantWeatherCondition;
-
-    // Getters and Setters
 }
