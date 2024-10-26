@@ -47,7 +47,5 @@ public class HourlyWeather {
 	public void setTimestamp(LocalDateTime timestamp) {
 		this.timestamp = timestamp;
 	}
-
-    // Getters and Setters
 }
 
