@@ -77,7 +77,7 @@ The data retrieved includes:
    mvn clean install
    ```
 
-4. Configure your `application.properties` file:
+4. Configure your `application.properties` file and `WeatherService.java`:
    
    - Create database in MySQL
      ```Query
@@ -89,6 +89,9 @@ The data retrieved includes:
      spring.datasource.url=jdbc:mysql://localhost:3306/weather_db
      spring.datasource.username=root
      spring.datasource.password=yourpassword
+     ```
+
+   - Add your API Key from OpenWeather API Key in `src/main/java/com/example/demo/WeatherService.java`:
      ```
 
 6. Run the application:
