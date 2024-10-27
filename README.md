@@ -92,6 +92,8 @@ The data retrieved includes:
      ```
 
    - Add your API Key from OpenWeather API Key in `src/main/java/com/example/demo/WeatherService.java`:
+     ```Code
+     private final String apiKey = " -- Your Open Weather API Key";
      ```
 
 6. Run the application:
