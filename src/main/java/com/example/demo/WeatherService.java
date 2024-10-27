@@ -7,7 +7,7 @@ import com.example.demo.WeatherData;
 
 @Service
 public class WeatherService {
-	private final String apiKey = "4bd34b4770c40ac2a14010d737eac354";
+	private final String apiKey = " -- Your Open Weather API Key";
     private final String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}";
 
     @Autowired
